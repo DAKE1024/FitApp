@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34923D602A4C8C2600E1DB0E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34923D5F2A4C8C2600E1DB0E /* TabBar.swift */; };
 		34FC1E532A4C811300FD627B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E522A4C811300FD627B /* AppDelegate.swift */; };
 		34FC1E552A4C811300FD627B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E542A4C811300FD627B /* SceneDelegate.swift */; };
 		34FC1E572A4C811300FD627B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E562A4C811300FD627B /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34923D5F2A4C8C2600E1DB0E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		34FC1E4F2A4C811300FD627B /* FitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FC1E522A4C811300FD627B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34FC1E542A4C811300FD627B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				34FC1E522A4C811300FD627B /* AppDelegate.swift */,
 				34FC1E542A4C811300FD627B /* SceneDelegate.swift */,
 				34FC1E562A4C811300FD627B /* ViewController.swift */,
+				34923D5F2A4C8C2600E1DB0E /* TabBar.swift */,
 				34FC1E5B2A4C811500FD627B /* Assets.xcassets */,
 				34FC1E5D2A4C811500FD627B /* LaunchScreen.storyboard */,
 				34FC1E602A4C811500FD627B /* Info.plist */,
@@ -137,6 +140,7 @@
 				34FC1E572A4C811300FD627B /* ViewController.swift in Sources */,
 				34FC1E532A4C811300FD627B /* AppDelegate.swift in Sources */,
 				34FC1E552A4C811300FD627B /* SceneDelegate.swift in Sources */,
+				34923D602A4C8C2600E1DB0E /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
