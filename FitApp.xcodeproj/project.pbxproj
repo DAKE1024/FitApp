@@ -14,6 +14,7 @@
 		34FC1E572A4C811300FD627B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E562A4C811300FD627B /* HomeViewController.swift */; };
 		34FC1E5C2A4C811500FD627B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FC1E5B2A4C811500FD627B /* Assets.xcassets */; };
 		34FC1E5F2A4C811500FD627B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FC1E5D2A4C811500FD627B /* LaunchScreen.storyboard */; };
+		B85A57F12A5099A60052B72A /* MetricItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A57F02A5099A60052B72A /* MetricItem.swift */; };
 		B87AF80B2A4C93A100B2582B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87AF80A2A4C93A100B2582B /* SearchViewController.swift */; };
 		B87AF80D2A4C93B700B2582B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87AF80C2A4C93B700B2582B /* ProfileViewController.swift */; };
 		B87AF80F2A4C98F400B2582B /* MetricsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87AF80E2A4C98F400B2582B /* MetricsCell.swift */; };
@@ -29,6 +30,7 @@
 		34FC1E5B2A4C811500FD627B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34FC1E5E2A4C811500FD627B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34FC1E602A4C811500FD627B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A57F02A5099A60052B72A /* MetricItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricItem.swift; sourceTree = "<group>"; };
 		B87AF80A2A4C93A100B2582B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B87AF80C2A4C93B700B2582B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B87AF80E2A4C98F400B2582B /* MetricsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsCell.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		B87AF8072A4C931700B2582B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B85A57F02A5099A60052B72A /* MetricItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				34FC1E572A4C811300FD627B /* HomeViewController.swift in Sources */,
 				34FC1E532A4C811300FD627B /* AppDelegate.swift in Sources */,
 				343810AB2A508AA400B4F64F /* ProfileCell.swift in Sources */,
+				B85A57F12A5099A60052B72A /* MetricItem.swift in Sources */,
 				34FC1E552A4C811300FD627B /* SceneDelegate.swift in Sources */,
 				34923D602A4C8C2600E1DB0E /* TabBar.swift in Sources */,
 			);

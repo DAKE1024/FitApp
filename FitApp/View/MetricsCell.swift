@@ -61,7 +61,9 @@ class MetricsCell: UITableViewCell {
         ])
     }
     
-    func updateModel() {
-        
+    func updateModel(item: MetricItem) {
+        mainImageView.image = UIImage(named: item.image)
+        titleLabel.text = item.title
+        subtitleLabel.text = item.subtitle
     }
 }

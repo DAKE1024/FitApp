@@ -41,12 +41,7 @@ final class ProfileViewController: UIViewController {
         tableView.separatorStyle = .none
         self.view.addSubview(tableView)
         
-        titleLabel.text = "Name"
-        titleLabel.font = .boldSystemFont(ofSize: 18)
         
-        subtitleLabel.text = "Steph Jaslyn"
-        subtitleLabel.textColor = .systemGray
-        subtitleLabel.font = .systemFont(ofSize: 14)
         
         setupConstraints()
         

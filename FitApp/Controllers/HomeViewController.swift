@@ -15,6 +15,12 @@ final class HomeViewController: UIViewController {
     private let logoImageView = UIImageView()
     private let tableView: UITableView = UITableView()
     
+    var items: [MetricItem] = [
+        MetricItem(title: "Water", subtitle: "2 litres", image: "water"),
+        MetricItem(title: "Steps", subtitle: "1234 steps", image: "walking"),
+        MetricItem(title: "Weight", subtitle: "75 kg", image: "weight")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -60,11 +66,13 @@ final class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! MetricsCell
+        
+        cell.updateModel(item: items[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

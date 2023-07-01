@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileCell: UITableViewCell {
     
-    private let mainImageView = UIImageView()
+    private let pencilImageView = UIImageView()
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
     
@@ -23,20 +23,21 @@ class ProfileCell: UITableViewCell {
     }
     
     private func initialize() {
-        [mainImageView,titleLabel,subtitleLabel].forEach { view in
+        [pencilImageView,titleLabel,subtitleLabel].forEach { view in
             view.translatesAutoresizingMaskIntoConstraints = false
             self.contentView.addSubview(view)
         }
-        mainImageView.image = UIImage(named: "pencil")
-        mainImageView.contentMode = .scaleAspectFit
-        mainImageView.clipsToBounds = true
+        pencilImageView.image = UIImage(named: "pencil")
+        pencilImageView.contentMode = .scaleAspectFit
+        pencilImageView.clipsToBounds = true
         
         titleLabel.text = "Name"
-        titleLabel.font = .boldSystemFont(ofSize: 18)
+        titleLabel.font = .systemFont(ofSize: 18)
+        titleLabel.textColor = UIColor(red: 0.18, green: 0.18, blue: 0.33, alpha: 1)
         
         subtitleLabel.text = "Daulet Komekbaev"
-        subtitleLabel.textColor = .systemGray
-        subtitleLabel.font = .systemFont(ofSize: 14)
+        subtitleLabel.textColor = .black
+        subtitleLabel.font = .boldSystemFont(ofSize: 14)
         
         setUpConstraints()
     }
@@ -44,18 +45,18 @@ class ProfileCell: UITableViewCell {
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
             
-            mainImageView.widthAnchor.constraint(equalToConstant: 18),
-            mainImageView.heightAnchor.constraint(equalToConstant: 18),
-            mainImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -26),
-            mainImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            pencilImageView.widthAnchor.constraint(equalToConstant: 18),
+            pencilImageView.heightAnchor.constraint(equalToConstant: 18),
+            pencilImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -26),
+            pencilImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor , constant: 4),
-            titleLabel.widthAnchor.constraint(equalToConstant: 100),
+            titleLabel.trailingAnchor.constraint(equalTo: pencilImageView.leadingAnchor, constant: -16),
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor , constant: 16),
            
             subtitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 33),
             subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 2),
-            subtitleLabel.trailingAnchor.constraint(equalTo: mainImageView.leadingAnchor, constant: -16)
+            subtitleLabel.trailingAnchor.constraint(equalTo: pencilImageView.leadingAnchor, constant: -16)
             
             
         ])
