@@ -13,6 +13,14 @@ final class ProfileViewController: UIViewController {
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
     
+    private var items: [ProfileInfoItem] = [
+    ProfileInfoItem(title: "Name", subtitle: "Komekbaev Daulet"),
+    ProfileInfoItem(title: "Status", subtitle: "At Gym"),
+    ProfileInfoItem(title: "Phone No", subtitle: "+998 99 123 45 67"),
+    ProfileInfoItem(title: "User Name", subtitle: "daulet.jaslyn"),
+    ProfileInfoItem(title: "Password", subtitle: "12341234", isSecure: true)
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -33,6 +41,7 @@ final class ProfileViewController: UIViewController {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(logoImageView)
 
+        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(ProfileCell.self, forCellReuseIdentifier: "ProfileCell")
         tableView.dataSource = self
@@ -70,12 +79,14 @@ final class ProfileViewController: UIViewController {
 extension ProfileViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell") as! ProfileCell
+        
+        cell.updateModel(item: items [indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

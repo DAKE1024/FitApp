@@ -62,8 +62,13 @@ class ProfileCell: UITableViewCell {
         ])
     }
     
-    func updateModel() {
+    func updateModel(item: ProfileInfoItem) {
+        titleLabel.text = item.title
+        subtitleLabel.text = item.subtitle
         
+        if item.isSecure {
+            subtitleLabel.text = "********"
+        }
     }
 
 }

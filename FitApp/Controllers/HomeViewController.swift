@@ -15,7 +15,7 @@ final class HomeViewController: UIViewController {
     private let logoImageView = UIImageView()
     private let tableView: UITableView = UITableView()
     
-    var items: [MetricItem] = [
+    private var items: [MetricItem] = [
         MetricItem(title: "Water", subtitle: "2 litres", image: "water"),
         MetricItem(title: "Steps", subtitle: "1234 steps", image: "walking"),
         MetricItem(title: "Weight", subtitle: "75 kg", image: "weight")
