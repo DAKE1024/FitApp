@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343810AB2A508AA400B4F64F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343810AA2A508AA400B4F64F /* ProfileCell.swift */; };
 		34923D602A4C8C2600E1DB0E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34923D5F2A4C8C2600E1DB0E /* TabBar.swift */; };
 		34FC1E532A4C811300FD627B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E522A4C811300FD627B /* AppDelegate.swift */; };
 		34FC1E552A4C811300FD627B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E542A4C811300FD627B /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343810AA2A508AA400B4F64F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		34923D5F2A4C8C2600E1DB0E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		34FC1E4F2A4C811300FD627B /* FitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FC1E522A4C811300FD627B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B87AF80E2A4C98F400B2582B /* MetricsCell.swift */,
+				343810AA2A508AA400B4F64F /* ProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,8 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				34923D5F2A4C8C2600E1DB0E /* TabBar.swift */,
-				34FC1E562A4C811300FD627B /* HomeViewController.swift */,
 				B87AF80A2A4C93A100B2582B /* SearchViewController.swift */,
+				34FC1E562A4C811300FD627B /* HomeViewController.swift */,
 				B87AF80C2A4C93B700B2582B /* ProfileViewController.swift */,
 			);
 			path = Controllers;
@@ -175,6 +178,7 @@
 				B87AF80B2A4C93A100B2582B /* SearchViewController.swift in Sources */,
 				34FC1E572A4C811300FD627B /* HomeViewController.swift in Sources */,
 				34FC1E532A4C811300FD627B /* AppDelegate.swift in Sources */,
+				343810AB2A508AA400B4F64F /* ProfileCell.swift in Sources */,
 				34FC1E552A4C811300FD627B /* SceneDelegate.swift in Sources */,
 				34923D602A4C8C2600E1DB0E /* TabBar.swift in Sources */,
 			);
