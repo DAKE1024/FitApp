@@ -27,7 +27,6 @@ class AnotherProfileCell: UITableViewCell {
             self.contentView.addSubview(view)
         }
         
-        anotherImageView.image = UIImage(named: "water")
         anotherImageView.contentMode = .scaleAspectFit
         anotherImageView.backgroundColor = .white
         anotherImageView.clipsToBounds = true
@@ -65,7 +64,11 @@ class AnotherProfileCell: UITableViewCell {
     }
     
     func updateModel(item: AnotherProfileItem) {
-        anotherImageView.image = UIImage(named: item.anotherImage)
+        if let image = UIImage(named: item.anotherImage) {
+            anotherImageView.image = image
+        }else {
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 26).isActive = true
+        }
         titleLabel.text = item.titleLabel
     }
 }

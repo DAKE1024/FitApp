@@ -14,6 +14,9 @@ class TabBar: UITabBarController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
            UITabBar.appearance().barTintColor = .systemBackground
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        UITabBar.appearance().scrollEdgeAppearance = appearance
            tabBar.tintColor = .label
            setupVCs()
     }
