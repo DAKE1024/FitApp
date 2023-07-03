@@ -34,7 +34,8 @@ class TabBar: UITabBarController {
                 
                 createNavController(for: HomeViewController(), title: NSLocalizedString("Home", comment: ""), image: UIImage(systemName: "house")!),
                 createNavController(for: SearchViewController(), title: NSLocalizedString("Search", comment: ""), image: UIImage(systemName: "magnifyingglass")!),
-                createNavController(for: ProfileViewController(), title: NSLocalizedString("Profile", comment: ""), image: UIImage(systemName: "person")!)
+                createNavController(for: ProfileViewController(), title: NSLocalizedString("Profile", comment: ""), image: UIImage(systemName: "person")!),
+                createNavController(for: AnotherProfileViewController(), title: NSLocalizedString("Another Profile", comment: ""), image: UIImage(systemName: "person.circle")!)
             ]
         }
     

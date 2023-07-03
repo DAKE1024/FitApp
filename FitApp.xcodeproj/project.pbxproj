@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340A81972A52FEF900C56700 /* AnotherProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A81962A52FEF900C56700 /* AnotherProfileItem.swift */; };
+		340A81992A53095C00C56700 /* AnotherProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A81982A53095C00C56700 /* AnotherProfileCell.swift */; };
 		343810AB2A508AA400B4F64F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343810AA2A508AA400B4F64F /* ProfileCell.swift */; };
 		343810AD2A509D5D00B4F64F /* ProfileInfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343810AC2A509D5D00B4F64F /* ProfileInfoItem.swift */; };
+		343810AF2A50A42D00B4F64F /* AnotherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343810AE2A50A42D00B4F64F /* AnotherProfileViewController.swift */; };
 		34923D602A4C8C2600E1DB0E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34923D5F2A4C8C2600E1DB0E /* TabBar.swift */; };
 		34FC1E532A4C811300FD627B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E522A4C811300FD627B /* AppDelegate.swift */; };
 		34FC1E552A4C811300FD627B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FC1E542A4C811300FD627B /* SceneDelegate.swift */; };
@@ -22,8 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340A81962A52FEF900C56700 /* AnotherProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherProfileItem.swift; sourceTree = "<group>"; };
+		340A81982A53095C00C56700 /* AnotherProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherProfileCell.swift; sourceTree = "<group>"; };
 		343810AA2A508AA400B4F64F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		343810AC2A509D5D00B4F64F /* ProfileInfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoItem.swift; sourceTree = "<group>"; };
+		343810AE2A50A42D00B4F64F /* AnotherProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherProfileViewController.swift; sourceTree = "<group>"; };
 		34923D5F2A4C8C2600E1DB0E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		34FC1E4F2A4C811300FD627B /* FitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FC1E522A4C811300FD627B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			children = (
 				B87AF80E2A4C98F400B2582B /* MetricsCell.swift */,
 				343810AA2A508AA400B4F64F /* ProfileCell.swift */,
+				340A81982A53095C00C56700 /* AnotherProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 			children = (
 				B85A57F02A5099A60052B72A /* MetricItem.swift */,
 				343810AC2A509D5D00B4F64F /* ProfileInfoItem.swift */,
+				340A81962A52FEF900C56700 /* AnotherProfileItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 				B87AF80A2A4C93A100B2582B /* SearchViewController.swift */,
 				34FC1E562A4C811300FD627B /* HomeViewController.swift */,
 				B87AF80C2A4C93B700B2582B /* ProfileViewController.swift */,
+				343810AE2A50A42D00B4F64F /* AnotherProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,11 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340A81972A52FEF900C56700 /* AnotherProfileItem.swift in Sources */,
 				343810AD2A509D5D00B4F64F /* ProfileInfoItem.swift in Sources */,
 				B87AF80F2A4C98F400B2582B /* MetricsCell.swift in Sources */,
+				343810AF2A50A42D00B4F64F /* AnotherProfileViewController.swift in Sources */,
 				B87AF80D2A4C93B700B2582B /* ProfileViewController.swift in Sources */,
 				B87AF80B2A4C93A100B2582B /* SearchViewController.swift in Sources */,
 				34FC1E572A4C811300FD627B /* HomeViewController.swift in Sources */,
+				340A81992A53095C00C56700 /* AnotherProfileCell.swift in Sources */,
 				34FC1E532A4C811300FD627B /* AppDelegate.swift in Sources */,
 				343810AB2A508AA400B4F64F /* ProfileCell.swift in Sources */,
 				B85A57F12A5099A60052B72A /* MetricItem.swift in Sources */,
